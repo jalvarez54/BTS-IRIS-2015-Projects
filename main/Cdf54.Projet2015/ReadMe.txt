@@ -1,5 +1,6 @@
 ﻿===============================================
-25/03/2015 BTS IRIS 2015 SWACF and WSC projects
+2015-04-01 BTS IRIS 2015 SWACF and WSC projects
+!!!! See App_Start/IdentityConfig.cs for registered users. !!!!
 =================================================================
 
 ////////////////////////
@@ -67,18 +68,17 @@
 -
 -
 //////////////////////////////////////////////////////////////
-[2015-03-31 - JA]
-- ADD: Dossier Technique
-- Commit on Codeplex (107295): https://cdf54swacfwsc.codeplex.com/ 
-- ADD: elements to Dossier Technique
-- Commit on Codeplex (107296): https://cdf54swacfwsc.codeplex.com/ 
-- ADD: Cdf54.Projet2015.Modeling project
-- Commit on Codeplex (?): https://cdf54swacfwsc.codeplex.com/ 
-
+[2015-04-01 - JA]
+- Commit on Codeplex (107304): https://cdf54swacfwsc.codeplex.com/ Initial commit
+- Remove old .nugget restore
+- Commit on Codeplex (?): https://cdf54swacfwsc.codeplex.com/ Remove old .nugget restore
 
 
 //////////////////////////////////////////////////////////////
-[2015-03-26 - JA]
+[2015-03-31 - JA]
+- Template: Empty web project
+- ADD: ReadMe.txt
+- UPDATE: AssemblyInfo.cs
 - Install-Package Microsoft.AspNet.Identity.Samples -Pre
 	- http://www.codeproject.com/Articles/790720/ASP-NET-Identity-Customizing-Users-and-Roles
 	- http://www.codeproject.com/Articles/762428/ASP-NET-MVC-and-Identity-Understanding-the-Basics
@@ -167,14 +167,6 @@
 	patches installed for IIS and ASP.NET.
 - ADD: app.MapSignalR(); in Startup.cs/Startup/Configuration(IAppBuilder app)
 - UPDATE: Jquery 1.10.0 to 2.1.3
-- Published on Codeplex (107269): https://cdf54swacfwsc.codeplex.com/ 
-
-//////////////////////////////////////////////////////////////
-[2015-03-25 - JA]
-- Template: Empty web project
-- ADD: ReadMe.txt
-- UPDATE: AssemblyInfo.cs
-
 
 ////////////////////////
 // SignalR Performances
@@ -188,8 +180,8 @@
 ////////////////////////
 // NB
 //////////////////////////////////////////////////////////////
-[]
--
+[2015-04-01 - JA]
+- See App_Start/IdentityConfig.cs for registered users.
 -
 -
 -
