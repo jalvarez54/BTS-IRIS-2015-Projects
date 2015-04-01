@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="7518f492-2642-4fef-990a-694d93d92a54" name="Context" linkedPackageId="1f735119-eba2-4a86-ac85-c927b1b4316f" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="b949258f-f75a-42b9-8418-035a25509148">
+      <elementDefinition Id="9962dd72-cb3d-4826-872f-afaaa545e854" />
+      <body>- Gestion des utilisateurs
+- Accès à la page ChatAdmin</body>
+      <annotatedElements>
+        <actorMoniker Id="1dc6193c-f689-4786-809a-ab43112a9f06" LastKnownName="Administrateur" />
+      </annotatedElements>
+    </comment>
+    <comment Id="9218c09b-8d67-4ece-850c-1b734c98f219">
+      <elementDefinition Id="7f605fbb-1d29-492a-947b-5282266bd366" />
+      <body>Dans cette version, les données sont stockées temporairement en mémoire (cache).
+Ce contenu est détruit lorsque l'ensemble des utilsateurs d'une session se déconnectent, lorsque le serveur redémarre.</body>
+      <annotatedElements>
+        <actorMoniker Id="f29f1813-7e19-4c86-a78b-bb484ca06f4f" LastKnownName="Stockage de données" />
+      </annotatedElements>
+    </comment>
+    <comment Id="e9cd8690-44aa-4d6d-9b46-a3073fc55e7b">
+      <elementDefinition Id="053d8065-aed7-46f5-a44d-5ac7ff255585" />
+      <body>ASP.NET Identity 2</body>
+      <annotatedElements>
+        <useCaseMoniker Id="3566dc1e-6636-4b90-9b1d-9c188f5a6de6" LastKnownName="Authentifier" />
+      </annotatedElements>
+    </comment>
+    <comment Id="773ac4cf-1e48-4f37-9fdc-5f2cdff1d385">
+      <elementDefinition Id="e2953136-6f74-49c5-9d95-5d6ade4fbf6b" />
+      <body>WebSockets</body>
+    </comment>
+    <comment Id="dd274778-36a5-469d-bdfe-7210bae71505">
+      <elementDefinition Id="2b23a386-de93-428e-9c79-26d017d2e0a9" />
+      <body>WebSockets</body>
+    </comment>
+    <comment Id="a670cb13-01ee-460c-b997-395c72a5693a">
+      <elementDefinition Id="99a7f19e-3944-4caa-a74e-36ab299a6a16" />
+      <body>- Les messages de type Public sont diffusés à l'ensemble des utilisateurs connectés.
+- Les messages Privés sont diffusés à toutes les sessions ouvertes du destinataire.</body>
+    </comment>
+    <comment Id="30f73250-e3ae-425c-8d93-705199affb1a">
+      <elementDefinition Id="7967a697-bf64-405d-bd70-93d8af44d1be" />
+      <body>BTS IRIS PROJET 2015</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="87b92d3e-ca9b-4707-ade0-a4ff0ca4a68b">
+      <profileInstance Id="573e44b2-995f-4f93-9513-2db28a7a8bbe" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="292297aa-3d21-491b-835b-f2319ce0a323">
+      <profileInstance Id="340f6c86-bc1a-4b85-8922-3ded71cab94d" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="37136165-0e67-4e76-85b9-d616a5e52fbd" name="Utilisateur" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f421f2ca-35c7-4f9d-a5cb-b68fe1b1c15b" />
+        <targetEnds>
+          <association Id="de76532f-ca84-452a-b610-194ab1c6abfd" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="63f781d2-7fde-45aa-9a7a-2f653c9c8e12" LastKnownName="Réceptionner message" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="88e52d85-1bf7-4bd9-bb63-ff152b5ea71f" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="471d1e77-3124-4b60-83f8-3aa368c98bb1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3b6dbaf7-e390-45bc-884d-782bd0af7619" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bdf297aa-daf7-46d8-af71-a63c43c59f0d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7113809d-e59e-4c6e-a268-b2d21425e99b" />
+          </association>
+          <association Id="42695677-21cf-4ad1-9cbf-3992c2f09ebe" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="UseCase2" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3566dc1e-6636-4b90-9b1d-9c188f5a6de6" LastKnownName="Authentifier" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="23069fc3-1fa5-4f73-aa79-58b40c6ed865" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2924fa61-e623-4381-9429-4a33dc2142eb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="91f15c5b-9284-4e0a-a41d-bc63b4a639e5" name="UseCase2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8c137606-458f-4fbc-ba5d-c7c327d6e1af" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a3e33fee-800e-4fe0-a8cf-485736148c2d" />
+          </association>
+          <association Id="90ea6399-d6ac-4ad0-99cc-b6a1920b82ef" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="UseCase3" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e9dc3458-6269-41b0-8e4e-4549da26a3ad" LastKnownName="Envoyer message" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="536d0f49-823e-4e7e-aa5c-b470438804df" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="751f70d7-0b50-4ad5-a4b9-f20f2058caa6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="060bfac3-53e6-40a5-ac6c-f3be455d66ba" name="UseCase3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="eca1b99e-bee9-4d2c-802a-9d69c8aaac9c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ba0e34ef-9717-4c40-a6ba-6a59e17197fe" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="63f781d2-7fde-45aa-9a7a-2f653c9c8e12" name="Réceptionner message" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b560ce86-b850-4e3f-bb82-038a852af4da" />
+        <additions>
+          <include Id="bfe206d0-70a2-4be8-b238-0f9395482fe1">
+            <useCaseMoniker Id="3566dc1e-6636-4b90-9b1d-9c188f5a6de6" LastKnownName="Authentifier" />
+            <elementDefinition Id="4e439af3-d8f7-4178-a7ab-51c6450d85bf" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3566dc1e-6636-4b90-9b1d-9c188f5a6de6" name="Authentifier" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="11ae8ce5-fc6d-4f85-9a4d-46133e99ec72" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e9dc3458-6269-41b0-8e4e-4549da26a3ad" name="Envoyer message" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e3891e90-0bcc-48a5-a44a-0d81518f95b2" />
+        <targetEnds>
+          <association Id="a7e6f0d1-bee7-4a69-af3f-371ea4329108" isDerived="false" sourceEndRoleName="Envoyer message" targetEndRoleName="Réceptionner message" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4a9c1851-43ce-4c01-b5a7-1455524ea8a1" LastKnownName="Réceptionner message" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d407d17c-e0e8-4998-ab2b-203c0b9c1812" name="Envoyer message" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cec4ba1b-c7a9-45ad-a4d6-0b03e859fbc9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="25958401-1b83-4a4d-a76c-0e70aaaf6cf8" name="Réceptionner message" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="be44b814-99dc-4412-a0a1-f7ddbe420837" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="32585304-8ea7-4523-8c0e-48c03ff1a5b3" />
+          </association>
+        </targetEnds>
+        <additions>
+          <include Id="4a9b90c8-1c66-44f4-bc5e-65970edb005b">
+            <useCaseMoniker Id="3566dc1e-6636-4b90-9b1d-9c188f5a6de6" LastKnownName="Authentifier" />
+            <elementDefinition Id="0307b768-6b5b-4d0a-a82d-8da80cd096c8" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="90b2e836-c31d-47c8-8571-80200262434d" name="Serveur" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="21f19040-6067-41b8-b7c3-86a16ae4c524" />
+        <targetEnds>
+          <association Id="a4654e32-b150-4cdf-ab59-15d1008fe9d9" isDerived="false" sourceEndRoleName="Serveur" targetEndRoleName="UseCase4" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4a9c1851-43ce-4c01-b5a7-1455524ea8a1" LastKnownName="Réceptionner message" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9eb0eb3b-26f4-4dfa-a7f2-dc21e7ab6ea2" name="Serveur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="746eb29a-512a-4ee3-8997-2ed593261712" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="86041b8e-7b80-478c-ad54-bced72bcf818" name="UseCase4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5f67d330-3e7a-4e86-ae4c-e092de023f68" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="743eca6d-004a-4d2a-882e-ad4d393890f8" />
+          </association>
+          <association Id="4b6b68f7-b49a-4676-b169-887b84da7686" isDerived="false" sourceEndRoleName="Serveur" targetEndRoleName="UseCase5" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ab254cbd-6d4b-4611-9966-557de4d007d4" LastKnownName="Envoyer message" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9afd80b1-40c6-49c7-ac11-9af126d207ec" name="Serveur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c5afa366-5dad-48e8-9fc9-13e0ab48183d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="320e2a8f-5ebb-4426-b77a-2ab400511f90" name="UseCase5" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="04c5a0f9-69d8-462b-96ce-5a9a2fc0a9fd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="49857f12-2628-4697-8fd2-350951ba6e4b" />
+          </association>
+          <association Id="f437df64-0db1-4af3-b609-4fbe08cacb07" isDerived="false" sourceEndRoleName="Serveur" targetEndRoleName="Referentiel" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="f29f1813-7e19-4c86-a78b-bb484ca06f4f" LastKnownName="Stockage de données" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f17d664c-b5ee-462f-b101-d42883b1d9cb" name="Serveur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7ff6c511-f89b-4fca-a175-f882f5f3b0c2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a9bf7130-d9ec-49e8-8469-f5a596e4abdc" name="Referentiel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7d0cadb9-8fec-4215-98c5-03d98a467b28" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="66664571-16e4-4212-9f38-69a1c5aa6486" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="f29f1813-7e19-4c86-a78b-bb484ca06f4f" name="Stockage de données" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="237bfeb6-a76a-47e0-8e57-70a3054e8fa7" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4a9c1851-43ce-4c01-b5a7-1455524ea8a1" name="Réceptionner message" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ef733236-863c-4d2c-89bd-2f7877d84bb0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ab254cbd-6d4b-4611-9966-557de4d007d4" name="Envoyer message" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ea635586-469c-43da-9ab5-75ebdcc28b9e" />
+        <targetEnds>
+          <association Id="6a8da851-21b8-43cb-a778-371367b957ed" isDerived="false" sourceEndRoleName="Envoyer message" targetEndRoleName="Réceptionner message" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="63f781d2-7fde-45aa-9a7a-2f653c9c8e12" LastKnownName="Réceptionner message" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d20b3822-720c-451c-a966-d856d979199a" name="Envoyer message" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dc062c2a-d252-49cf-9985-ead489233744" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="26db2c05-3843-48de-94d2-d2cf023090d7" name="Réceptionner message" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e57ac833-e25a-4725-b11e-1c5737e3aadb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5e620577-2712-4b9a-abcf-3206c87fac5b" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="1dc6193c-f689-4786-809a-ab43112a9f06" name="Administrateur" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="10a029b4-bc86-4785-aac4-55225de080fe" />
+        <generalsInternal>
+          <generalization Id="33b5c1a0-bc4b-40c7-bfed-81963d4a6d94" isSubstitutable="false">
+            <actorMoniker Id="37136165-0e67-4e76-85b9-d616a5e52fbd" LastKnownName="Utilisateur" />
+            <elementDefinition Id="52d1e268-7e71-492f-9255-0b2273a76563" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="1f735119-eba2-4a86-ac85-c927b1b4316f" name="Cdf54.Projet2015.Modeling">
+    <elementDefinition Id="668ca265-2634-40bf-a312-7d76a1c4ccd3" />
+  </package>
+</useCaseModelRoot>
