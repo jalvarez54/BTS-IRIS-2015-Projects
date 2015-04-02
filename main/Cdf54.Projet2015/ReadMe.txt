@@ -73,8 +73,8 @@
 - Commit on Codeplex (107313): https://cdf54swacfwsc.codeplex.com/ ADD: .tfignore file
 - Commit on Codeplex (107314): https://cdf54swacfwsc.codeplex.com/ DELETE: Dossier Technique and Media folders
 - Commit on Codeplex (107315): https://cdf54swacfwsc.codeplex.com/ REMOVE: Web.xxxxxxx.config from source control
-- Commit on Codeplex (107315): https://cdf54swacfwsc.codeplex.com/ TEST: .tfignore with Web.xxxxxxx.config
--
+- Commit on Codeplex (107316): https://cdf54swacfwsc.codeplex.com/ TEST: .tfignore with Web.xxxxxxx.config
+- Commit on Codeplex (?): https://cdf54swacfwsc.codeplex.com/ TEST 2: .tfignore with Web.xxxxxxx.config
 -
 //////////////////////////////////////////////////////////////
 [2015-04-01 - JA]
