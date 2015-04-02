@@ -22,11 +22,13 @@
 	==> done
 -
 -
+//////////////////////////////////////////////////////////////
 []
 -
 -
 -
 -
+//////////////////////////////////////////////////////////////
 []
 -
 -
@@ -42,6 +44,7 @@
 -
 -
 -
+//////////////////////////////////////////////////////////////
 []
 -
 -
@@ -57,21 +60,24 @@
 -
 -
 -
-[]
--
--
--
--
+//////////////////////////////////////////////////////////////
 []
 -
 -
 -
 -
 //////////////////////////////////////////////////////////////
+[2015-04-02 - JA]
+- ADD: .tfignore file
+	https://msdn.microsoft.com/library/vstudio/ms245454%28v=vs.110%29.aspx#tfignore
+- Commit on Codeplex (?): https://cdf54swacfwsc.codeplex.com/ ADD: .tfignore file
+-
+-
+//////////////////////////////////////////////////////////////
 [2015-04-01 - JA]
 - Commit on Codeplex (107304): https://cdf54swacfwsc.codeplex.com/ Initial commit
 - Remove old .nugget restore
-- Commit on Codeplex (?): https://cdf54swacfwsc.codeplex.com/ Remove old .nugget restore
+- Commit on Codeplex (107306): https://cdf54swacfwsc.codeplex.com/ Remove old .nugget restore
 
 
 //////////////////////////////////////////////////////////////
@@ -182,6 +188,15 @@
 //////////////////////////////////////////////////////////////
 [2015-04-01 - JA]
 - See App_Start/IdentityConfig.cs for registered users.
--
+	firefox@cdf54.local  
+	opera@cdf54.local
+	canedit@cdf54.local  
+	ie@cdf54.local  
+	chrome@cdf54.local  
+	admin@cdf54.local  
+	Same password = P@ssword2015
+[2015-04-02]
+- Guidelines: Source Control
+	https://tfsguide.codeplex.com/wikipage?title=Guidelines%3a%20%20Source%20Control&referringTitle=Home
 -
 -
