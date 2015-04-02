@@ -71,7 +71,8 @@
 - ADD: .tfignore file
 	https://msdn.microsoft.com/library/vstudio/ms245454%28v=vs.110%29.aspx#tfignore
 - Commit on Codeplex (107313): https://cdf54swacfwsc.codeplex.com/ ADD: .tfignore file
-- Commit on Codeplex (?): https://cdf54swacfwsc.codeplex.com/ DELETE: Dossier Technique and Media folders
+- Commit on Codeplex (107314): https://cdf54swacfwsc.codeplex.com/ DELETE: Dossier Technique and Media folders
+- Commit on Codeplex (?): https://cdf54swacfwsc.codeplex.com/ REMOVE: We.xxxxxxx.config from source control
 -
 -
 //////////////////////////////////////////////////////////////
