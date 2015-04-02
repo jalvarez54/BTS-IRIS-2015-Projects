@@ -75,7 +75,8 @@
 - Commit on Codeplex (107315): https://cdf54swacfwsc.codeplex.com/ REMOVE: Web.xxxxxxx.config from source control
 - Commit on Codeplex (107316): https://cdf54swacfwsc.codeplex.com/ TEST: .tfignore with Web.xxxxxxx.config
 - Commit on Codeplex (107317): https://cdf54swacfwsc.codeplex.com/ TEST 2: .tfignore with Web.xxxxxxx.config
-- Commit on Codeplex (?): https://cdf54swacfwsc.codeplex.com/ TEST 3: .tfignore with Web.xxxxxxx.config
+- Commit on Codeplex (107318): https://cdf54swacfwsc.codeplex.com/ TEST 3: .tfignore with Web.xxxxxxx.config
+- Commit on Codeplex (?): https://cdf54swacfwsc.codeplex.com/ ADD: Docs folder with files
 -
 -
 -
