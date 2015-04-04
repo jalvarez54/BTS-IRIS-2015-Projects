@@ -61,11 +61,10 @@
 -
 -
 //////////////////////////////////////////////////////////////
-[]
--
--
--
--
+[2015-04-04 - JA]
+- DELETE: packages folder
+- Commit on Codeplex (?): https://cdf54swacfwsc.codeplex.com/  DELETE: packages folder
+
 //////////////////////////////////////////////////////////////
 [2015-04-02 - JA]
 - ADD: .tfignore file
@@ -76,18 +75,13 @@
 - Commit on Codeplex (107316): https://cdf54swacfwsc.codeplex.com/ TEST: .tfignore with Web.xxxxxxx.config
 - Commit on Codeplex (107317): https://cdf54swacfwsc.codeplex.com/ TEST 2: .tfignore with Web.xxxxxxx.config
 - Commit on Codeplex (107318): https://cdf54swacfwsc.codeplex.com/ TEST 3: .tfignore with Web.xxxxxxx.config
-- Commit on Codeplex (?): https://cdf54swacfwsc.codeplex.com/ ADD: Docs folder with files
--
--
--
--
--
+- Commit on Codeplex (107319): https://cdf54swacfwsc.codeplex.com/ ADD: Docs folder with files
+
 //////////////////////////////////////////////////////////////
 [2015-04-01 - JA]
 - Commit on Codeplex (107304): https://cdf54swacfwsc.codeplex.com/ Initial commit
 - Remove old .nugget restore
 - Commit on Codeplex (107306): https://cdf54swacfwsc.codeplex.com/ Remove old .nugget restore
-
 
 //////////////////////////////////////////////////////////////
 [2015-03-31 - JA]
@@ -207,5 +201,5 @@
 [2015-04-02]
 - Guidelines: Source Control
 	https://tfsguide.codeplex.com/wikipage?title=Guidelines%3a%20%20Source%20Control&referringTitle=Home
--
--
+- TFS Power Tools 2013 to get the Windows Explorer extension
+	https://visualstudiogallery.msdn.microsoft.com/f017b10c-02b4-4d6d-9845-58a06545627f
